@@ -27,6 +27,13 @@ public class DBTester {
     private static final String JDBC_USER = "APP";
     private static final String JDBC_PASSWORD = "APP";
 
+
+    /*  private static final String JDBC_CONNSTRING =
+           "jdbc:postgresql://10.2.99.1:5432/visa";
+   /*********************************************************/
+ /*  private static final String JDBC_USER = "alumnodb";
+   private static final String JDBC_PASSWORD = "****";*/
+
     // Para conexión por datasource, sólo necesitamos su nombre
     // TODO: Definir el nombre del datasource
     /*************************************************/
@@ -44,8 +51,8 @@ public class DBTester {
     private int     dsConnectionCount = 0;
     private int     directConnectionCount = 0;
 
-    
-    
+
+
     public DBTester() {
 
         try {
