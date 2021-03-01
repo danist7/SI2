@@ -21,18 +21,18 @@ public class DBTester {
 
     // TODO: Definir la cadena de conexion a la base de datos
     /*********************************************************/
-    private static final String JDBC_CONNSTRING =
+    /*private static final String JDBC_CONNSTRING =
             "jdbc:derby://10.1.1.1:1527/visa;create=true";
     /*********************************************************/
-    private static final String JDBC_USER = "APP";
-    private static final String JDBC_PASSWORD = "APP";
+  /*  private static final String JDBC_USER = "APP";
+    private static final String JDBC_PASSWORD = "APP";*/
 
 
-    /*  private static final String JDBC_CONNSTRING =
+   private static final String JDBC_CONNSTRING =
            "jdbc:postgresql://10.2.99.1:5432/visa";
    /*********************************************************/
- /*  private static final String JDBC_USER = "alumnodb";
-   private static final String JDBC_PASSWORD = "****";*/
+   private static final String JDBC_USER = "alumnodb";
+   private static final String JDBC_PASSWORD = "****";
 
     // Para conexión por datasource, sólo necesitamos su nombre
     // TODO: Definir el nombre del datasource
