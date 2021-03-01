@@ -28,7 +28,7 @@ import javax.jws.WebService;
  * @author jaime
  */
 @WebService()
-public class VisaDAO extends DBTester {
+public class VisaDAOWS extends DBTester {
 
     private boolean debug = false;
 
@@ -81,7 +81,7 @@ public class VisaDAO extends DBTester {
     /**
      * Constructor de la clase
      */
-    public VisaDAO() {
+    public VisaDAOWS() {
         return;
     }
 
@@ -135,8 +135,8 @@ public class VisaDAO extends DBTester {
      * @return true si la comprobacion contra las tarjetas contenidas en
      *         en la tabla TARJETA fue satisfactoria, false en caso contrario     */
     @WebMethod(operationName = "compruebaTarjeta")
-    @WebParam(name = "tarjeta")
-    public boolean compruebaTarjeta(TarjetaBean tarjeta) {
+
+    public boolean compruebaTarjeta( @WebParam(name = "tarjeta") TarjetaBean tarjeta) {
         Connection con = null;
         Statement stmt = null;
         ResultSet rs = null;
@@ -210,8 +210,7 @@ public class VisaDAO extends DBTester {
      * @return
      */
     @WebMethod(operationName = "realizaPago")
-    @WebParam(name = "pago")
-    public synchronized PagoBean realizaPago(PagoBean pago) {
+    public synchronized PagoBean realizaPago(@WebParam(name = "pago") PagoBean pago) {
         Connection con = null;
         Statement stmt = null;
         ResultSet rs = null;
@@ -459,8 +458,7 @@ public class VisaDAO extends DBTester {
     }
 
     @WebMethod(operationName = "setPrepared")
-    @WebParam(name = "prepared")
-    public void setPrepared(boolean prepared) {
+    public void setPrepared(@WebParam(name = "prepared") boolean prepared) {
         this.prepared = prepared;
     }
     /********************************************************/
@@ -477,8 +475,7 @@ public class VisaDAO extends DBTester {
      * @param debug the debug to set
      */
      @WebMethod(operationName = "setDebug")
-     @WebParam(name = "debug")
-    public void setDebug(boolean debug) {
+     public void setDebug(@WebParam(name = "debug") boolean debug) {
         this.debug = debug;
     }
 
@@ -505,7 +502,7 @@ public class VisaDAO extends DBTester {
      @Override
      @WebMethod(operationName = "isDirectConnection")
     public boolean isDirectConnection() {
-        super();
+        return super.isDirectConnection();
     }
 
     /**
@@ -513,9 +510,8 @@ public class VisaDAO extends DBTester {
      */
      @Override
      @WebMethod(operationName = "setDirectConnection")
-     @WebParam(name = "directConnection")
-    public void setDirectConnection(boolean directConnection) {
-        super(directConnection);
+    public void setDirectConnection(@WebParam(name = "directConnection") boolean directConnection) {
+        super.setDirectConnection(directConnection);
     }
 
 }

@@ -7,15 +7,15 @@
     <!-- Inicialización de parámetros de contexto que definen constantes
        de tipo String que se usan en la aplicación, lo que se puede
        particularizar por el administrador del sistema que instala la
-       aplicación. Los valores que se asignen a estos parámetros se 
+       aplicación. Los valores que se asignen a estos parámetros se
        pueden obtener en un servlet o página JSP llamando a:
-           
+
         String value =
                getServletContext().getInitParameter("nombre");
-              
+
        donde "nombre se corresponde con el elemento <param-name>
        de uno de estos parámetros de inicialización.
-       
+
        Se puede definir cualquier número de parámetros de inicialización,
        incluyendo cero parámetros.
     -->
@@ -25,13 +25,16 @@
         <param-value>myaddress@mycompany.com</param-value>
     </context-param>
     -->
-
+    <context-param>
+        <param-name>service-url</param-name>
+        <param-value>http://10.2.99.1:8080/P1-ws-ws/VisaDAOWSService</param-value>
+    </context-param>
     <!-- Definición de cada uno de los Servlet que componen la aplicación
        incluyendo parámetros de inicialización de cada servlet.
-       
+
        Los parámetros de inicialización de servlets se pueden obtener en
        un servlet o página JSP llamando a:
-       
+
              String value =
                getServletConfig().getInitParameter("nombre");
 
@@ -41,16 +44,16 @@
         Se puede definir cualquier número de servlets, incluso cero
     -->
     <!-- Definición de filtros que dispone la aplicación. Los filtro se definen
-    de manera similar a los servlet. Requieren un nombre y la clase que lo 
+    de manera similar a los servlet. Requieren un nombre y la clase que lo
     implementa.
-    
+
     Los parámetros de inicialización de un filtro se pueden obtener en llamando a:
-       
+
              String value =
                filterconfig.getInitParameter("nombre");
 
        donde "nombre se corresponde con el elemento <param-name>
-       de uno de estos parámetros de inicialización.      
+       de uno de estos parámetros de inicialización.
     -->
     <filter>
         <filter-name>CompruebaSesion</filter-name>
@@ -60,15 +63,15 @@
             <param-value>/pago.html,/testbd.jsp,/comienzapago,/procesapago,/getpagos,/delpagos</param-value>
         </init-param>
     </filter>
-    
-	
-    <!-- Definición de cada uno de las correspondencias entre Filtros 
+
+
+    <!-- Definición de cada uno de las correspondencias entre Filtros
        y URLs a las que se aplica el filtrado.
-       
-       El patrón del URL puede contener un * para indicar que cualquier 
+
+       El patrón del URL puede contener un * para indicar que cualquier
        nombre en el URL es válido para acceder al servlet que se indique.
-       
-       Los filtros se puede aplicar a REQUEST, FORWARD, INCLUDE o ERROR, 
+
+       Los filtros se puede aplicar a REQUEST, FORWARD, INCLUDE o ERROR,
        dependiendo del tipo de petición a la que afecte
     -->
     <filter-mapping>
@@ -76,13 +79,13 @@
         <url-pattern>/*</url-pattern>
         <dispatcher>REQUEST</dispatcher>
     </filter-mapping>
-    
+
     <!-- Definición de cada uno de los Servlet que componen la aplicación
        incluyendo parámetros de inicialización de cada servlet.
-       
+
        Los parámetros de inicialización de servlets se pueden obtener en
        un servlet o página JSP llamando a:
-       
+
              String value =
                getServletConfig().getInitParameter("nombre");
 
@@ -102,16 +105,16 @@
     <servlet>
         <servlet-name>GetPagos</servlet-name>
         <servlet-class>ssii2.controlador.GetPagos</servlet-class>
-    </servlet>	
+    </servlet>
 	<servlet>
         <servlet-name>DelPagos</servlet-name>
         <servlet-class>ssii2.controlador.DelPagos</servlet-class>
-    </servlet>	
-    
-    <!-- Definición de cada uno de las correspondencias entre Servlets 
+    </servlet>
+
+    <!-- Definición de cada uno de las correspondencias entre Servlets
        y URLs desde los que se accedería a los mismos.
-       
-       El patrón del URL puede contener un * para indicar que cualquier 
+
+       El patrón del URL puede contener un * para indicar que cualquier
        nombre en el URL es válido para acceder al servlet que se indique.
     -->
     <servlet-mapping>
@@ -125,25 +128,25 @@
     <servlet-mapping>
         <servlet-name>GetPagos</servlet-name>
         <url-pattern>/getpagos</url-pattern>
-    </servlet-mapping>	
+    </servlet-mapping>
 	<servlet-mapping>
         <servlet-name>DelPagos</servlet-name>
         <url-pattern>/delpagos</url-pattern>
-    </servlet-mapping>	
-    
+    </servlet-mapping>
+
     <!-- Define el tiempo de sesión por defecto para la aplicación en
        minutos. Para un servlet o página JSP se puede modificar el
-       tiempo para una sesión de manera dinámica usando 
-               HttpSession.getMaxInactiveInterval(). 
+       tiempo para una sesión de manera dinámica usando
+               HttpSession.getMaxInactiveInterval().
     -->
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
-    
-     <!-- Lista de archivos que el servidor entregará por defecto si no se 
-          pide ningún archivo concreto 
+
+     <!-- Lista de archivos que el servidor entregará por defecto si no se
+          pide ningún archivo concreto
     -->
     <welcome-file-list>
         <welcome-file>pago.html</welcome-file>
