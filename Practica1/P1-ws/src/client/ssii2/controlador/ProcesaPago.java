@@ -151,11 +151,13 @@ throws ServletException, IOException {
                 return;
         }
         try{
-                //VisaDAOWSService service = new VisaDAOWSService();
-                //VisaDAOWS dao = service.getVisaDAOWSPort ();
-                String url = getServletContext().getInitParameter("nombre-parámetro").
+                VisaDAOWSService service = new VisaDAOWSService();
+                VisaDAOWS dao = service.getVisaDAOWSPort ();
+
+                String url = getServletContext().getInitParameter("service-url");
                 BindingProvider bp = (BindingProvider) dao;
                 bp.getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY,url);
+
                 HttpSession sesion = request.getSession(false);
                 if (sesion != null) {
                         pago = (PagoBean) sesion.getAttribute(ComienzaPago.ATTR_PAGO);
