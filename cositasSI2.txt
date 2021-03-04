@@ -1,0 +1,31 @@
+export J2EE_HOME=/opt/glassfish4/glassfish
+echo $J2EE_HOME
+sudo ./virtualip.sh interfaz
+
+Si queremos abrir varias VM copiamos la carpeta de la iso varias veces
+
+Editar al arrancar la VM: dos redes NAT y Bridge
+1gb de memoria ram
+En ambas, generar una MAC en opciones avanzadas
+Otra opciones ejecutar ./si2fixMAC.sh <grupo> <pareja> <PC>
+
+Para detener una VM: sudo halt
+
+Para iniciar sesion en la VM: usuario si2 y pwd 2021sid0s
+
+CRTL-ALT para cambiar el raton entre VM y pc
+
+Mi dir ip es 10.grupo.pareja.numero
+
+Una vez creada solo necesitamos hacer ping a la ip y luego
+acceder a ella con ssh si2@ip.ip.ip.ip
+
+GLASSFISH
+Iniciar servidor: asadmin start-domain domain1
+Detener servidor: asadmin stop-domain domain1
+Acceder al servidor: http://10.X.Y.Z:8080/app
+Acceder a la administracion: e http://10.X.Y.Z:4848
+A veces esta en  https://10.X.Y.Z:8181
+
+
+ant todo
