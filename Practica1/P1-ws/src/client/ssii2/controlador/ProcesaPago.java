@@ -44,10 +44,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import ssii2.visa.*;
-import ssii2.visa.dao.VisaDAO;
 import ssii2.visa.VisaDAOWSService; // Stub generado automáticamente
 import ssii2.visa.VisaDAOWS; // Stub generado automáticamente
 import javax.xml.ws.WebServiceRef;
+import javax.xml.ws.BindingProvider;
+
 
 /**
  *

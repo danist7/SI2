@@ -17,8 +17,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import ssii2.visa.PagoBean;
-import ssii2.visa.dao.VisaDAO;
+import ssii2.visa.VisaDAOWSService; // Stub generado automáticamente
+import ssii2.visa.VisaDAOWS; // Stub generado automáticamente
+import javax.xml.ws.WebServiceRef;
+import javax.xml.ws.BindingProvider;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -60,8 +64,8 @@ throws ServletException, IOException {
         String idComercio = request.getParameter(PARAM_ID_COMERCIO);
 
         /* Petici&oacute;n de los pagos para el comercio */
-        ArrayList<PagoBean> ret = dao.getPagos(idComercio);
-        PagoBean[] pagos = ret.toArray()
+        List<PagoBean> ret = dao.getPagos(idComercio);
+        PagoBean[] pagos = ret.toArray(new PagoBean[ret.size()]);
 
         request.setAttribute(ATTR_PAGOS, pagos);
         reenvia("/listapagos.jsp", request, response);
