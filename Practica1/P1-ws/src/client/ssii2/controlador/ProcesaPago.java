@@ -180,8 +180,8 @@ throws ServletException, IOException {
                         enviaError(new Exception("Tarjeta no autorizada:"), request, response);
                         return;
                 }
-
-                if (dao.realizaPago(pago) == null) {
+                pago = dao.realizaPago(pago);
+                if (pago == null) {
                         enviaError(new Exception("Pago incorrecto"), request, response);
                         return;
                 }
