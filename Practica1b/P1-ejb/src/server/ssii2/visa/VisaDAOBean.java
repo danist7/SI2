@@ -20,12 +20,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import javax.ejb.Stateless;
 
 
 /**
  * @author jaime
  */
-public class VisaDAOBean extends DBTester {
+@Stateless(mappedName="VisaDAOBean")
+public class VisaDAOBean extends DBTester implements VisaDAOLocal {
 
     private boolean debug = false;
 
@@ -74,13 +76,6 @@ public class VisaDAOBean extends DBTester {
                     " and idComercio = ?";
     /**************************************************/
 
-
-    /**
-     * Constructor de la clase
-     */
-    public VisaDAOBean() {
-        return;
-    }
 
 
     /**
@@ -323,7 +318,7 @@ public class VisaDAOBean extends DBTester {
      * @param idComercio
      * @return
      */
-     public ArrayList<PagoBean> getPagos(String idComercio) {
+     public PagoBean[] getPagos(String idComercio) {
 
         PreparedStatement pstmt = null;
         Connection pcon = null;
@@ -363,8 +358,8 @@ public class VisaDAOBean extends DBTester {
                 pagos.add(p);
             }
 
-          //  ret = new PagoBean[pagos.size()];
-          //  ret = pagos.toArray(ret);
+            ret = new PagoBean[pagos.size()];
+            ret = pagos.toArray(ret);
 
             // Cerramos / devolvemos la conexion al pool
             pcon.close();
@@ -387,7 +382,7 @@ public class VisaDAOBean extends DBTester {
             }
         }
 
-        return pagos;
+        return ret;
     }
 
     // Borrar los pagos asociados a un comercio

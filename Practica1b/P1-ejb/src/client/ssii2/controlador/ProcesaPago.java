@@ -44,10 +44,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import ssii2.visa.*;
-import ssii2.visa.VisaDAOWSService; // Stub generado automáticamente
-import ssii2.visa.VisaDAOWS; // Stub generado automáticamente
 import javax.xml.ws.WebServiceRef;
-import javax.xml.ws.BindingProvider;
+import javax.ejb.EJB;
+import ssii2.visa.VisaDAOLocal;
 
 
 /**
@@ -109,6 +108,12 @@ public class ProcesaPago extends ServletRaiz {
      */
     public final static String ATTR_PAGO = "pago";
 
+    /**
+    * Objeto proxy para el acceso al EJB local
+    */
+    @EJB(name="VisaDAOBean", beanInterface=VisaDAOLocal.class)
+    private VisaDAOLocal dao;
+
   private static void displayInterfaceInformation(
          NetworkInterface netint) throws SocketException {
        System.out.printf(
@@ -136,7 +141,7 @@ private void printAddresses(HttpServletRequest request, HttpServletResponse resp
  * Procesa una petici&oacute;n HTTP tanto <code>GET</code> como <code>POST</code>.
  * @param request objeto de petici&oacute;n
  * @param response objeto de respuesta
- */
+*/
 @Override
 protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 throws ServletException, IOException {
@@ -151,48 +156,40 @@ throws ServletException, IOException {
                 reenvia("/formdatosvisa.jsp", request, response);
                 return;
         }
-        try{
-                VisaDAOWSService service = new VisaDAOWSService();
-                VisaDAOWS dao = service.getVisaDAOWSPort ();
 
-                String url = getServletContext().getInitParameter("service-url");
-                BindingProvider bp = (BindingProvider) dao;
-                bp.getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY,url);
 
-                HttpSession sesion = request.getSession(false);
-                if (sesion != null) {
-                        pago = (PagoBean) sesion.getAttribute(ComienzaPago.ATTR_PAGO);
-                }
-                if (pago == null) {
-                        pago = creaPago(request);
-                        boolean isdebug = Boolean.valueOf(request.getParameter("debug"));
-                        dao.setDebug(isdebug);
-                        boolean isdirectConnection = Boolean.valueOf(request.getParameter("directConnection"));
-                        dao.setDirectConnection(isdirectConnection);
-                        boolean usePrepared = Boolean.valueOf(request.getParameter("usePrepared"));
-                        dao.setPrepared(usePrepared);
-                }
 
-                // Almacenamos la tarjeta en el pago
-                pago.setTarjeta(tarjeta);
-
-                if (!dao.compruebaTarjeta(tarjeta)) {
-                        enviaError(new Exception("Tarjeta no autorizada:"), request, response);
-                        return;
-                }
-                pago = dao.realizaPago(pago);
-                if (pago == null) {
-                        enviaError(new Exception("Pago incorrecto"), request, response);
-                        return;
-                }
-
-                request.setAttribute(ComienzaPago.ATTR_PAGO, pago);
-                if (sesion != null) sesion.invalidate();
-                reenvia("/pagoexito.jsp", request, response);
-
-        } catch (Exception ee) {
-                enviaError(ee,request,response);
+        HttpSession sesion = request.getSession(false);
+        if (sesion != null) {
+                pago = (PagoBean) sesion.getAttribute(ComienzaPago.ATTR_PAGO);
         }
+        if (pago == null) {
+                pago = creaPago(request);
+                boolean isdebug = Boolean.valueOf(request.getParameter("debug"));
+                dao.setDebug(isdebug);
+                boolean isdirectConnection = Boolean.valueOf(request.getParameter("directConnection"));
+                dao.setDirectConnection(isdirectConnection);
+                boolean usePrepared = Boolean.valueOf(request.getParameter("usePrepared"));
+                dao.setPrepared(usePrepared);
+        }
+
+        // Almacenamos la tarjeta en el pago
+        pago.setTarjeta(tarjeta);
+
+        if (!dao.compruebaTarjeta(tarjeta)) {
+                enviaError(new Exception("Tarjeta no autorizada:"), request, response);
+                return;
+        }
+        pago = dao.realizaPago(pago);
+        if (pago == null) {
+                enviaError(new Exception("Pago incorrecto"), request, response);
+                return;
+        }
+
+        request.setAttribute(ComienzaPago.ATTR_PAGO, pago);
+        if (sesion != null) sesion.invalidate();
+        reenvia("/pagoexito.jsp", request, response);
+
 
         return;
 

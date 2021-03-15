@@ -17,10 +17,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import ssii2.visa.PagoBean;
-import ssii2.visa.VisaDAOWSService; // Stub generado automáticamente
-import ssii2.visa.VisaDAOWS; // Stub generado automáticamente
 import javax.xml.ws.WebServiceRef;
-import javax.xml.ws.BindingProvider;
+import javax.ejb.EJB;
+import ssii2.visa.VisaDAOLocal;
 
 
 /**
@@ -45,19 +44,18 @@ public final static String PARAM_RUTA_RETORNO = "ruta";
 public final static String ATTR_BORRADOS = "borrados";
 
 /**
+* Objeto proxy para el acceso al EJB local
+*/
+@EJB(name="VisaDAOBean", beanInterface=VisaDAOLocal.class)
+private VisaDAOLocal dao;
+
+/**
  * Procesa una petici&oacute;n HTTP tanto <code>GET</code> como <code>POST</code>.
  * @param request objeto de petici&oacute;n
  * @param response objeto de respuesta
  */
 protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 throws ServletException, IOException {
-
-        VisaDAOWSService service = new VisaDAOWSService();
-        VisaDAOWS dao = service.getVisaDAOWSPort ();
-
-        String url = getServletContext().getInitParameter("service-url");
-        BindingProvider bp = (BindingProvider) dao;
-        bp.getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY,url);
 
         /* Se recoge de la petici&oacute;n el par&aacute;metro idComercio*/
         String idComercio = request.getParameter(PARAM_ID_COMERCIO);
