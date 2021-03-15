@@ -25,10 +25,7 @@
         <param-value>myaddress@mycompany.com</param-value>
     </context-param>
     -->
-    <context-param>
-        <param-name>service-url</param-name>
-        <param-value>http://10.2.99.1:8080/P1-ws-ws/VisaDAOWSService</param-value>
-    </context-param>
+    
     <!-- Definición de cada uno de los Servlet que componen la aplicación
        incluyendo parámetros de inicialización de cada servlet.
 

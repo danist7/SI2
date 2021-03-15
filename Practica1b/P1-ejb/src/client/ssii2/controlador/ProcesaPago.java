@@ -150,14 +150,14 @@ throws ServletException, IOException {
         ValidadorTarjeta val = new ValidadorTarjeta();
         PagoBean pago = null;
 
-        // printAddresses(request,response);
+        //printAddresses(request,response);
         if (!val.esValida(tarjeta)) {
                 request.setAttribute(val.getErrorName(), val.getErrorVisa());
                 reenvia("/formdatosvisa.jsp", request, response);
                 return;
         }
 
-
+        String url = getServletContext().getInitParameter("service-url");
 
         HttpSession sesion = request.getSession(false);
         if (sesion != null) {
@@ -180,6 +180,7 @@ throws ServletException, IOException {
                 enviaError(new Exception("Tarjeta no autorizada:"), request, response);
                 return;
         }
+
         pago = dao.realizaPago(pago);
         if (pago == null) {
                 enviaError(new Exception("Pago incorrecto"), request, response);

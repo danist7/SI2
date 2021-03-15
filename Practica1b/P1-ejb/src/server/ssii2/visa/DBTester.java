@@ -6,8 +6,7 @@ import java.sql.SQLException;
 import javax.sql.DataSource;
 import javax.naming.InitialContext;
 
-import javax.jws.WebMethod;
-import javax.jws.WebParam;
+
 
 
 /**
@@ -114,16 +113,14 @@ public class DBTester {
     /**
      * @return the pooled
      */
-    @WebMethod(operationName = "isDirectConnection")
-    public boolean isDirectConnection() {
+  public boolean isDirectConnection() {
         return directConnection;
     }
 
     /**
      * @param directConnection valor de conexión directa o indirecta
      */
-    @WebMethod(operationName = "setDirectConnection")
-    public void setDirectConnection(@WebParam(name = "directConnection") boolean directConnection) {
+    public void setDirectConnection(boolean directConnection) {
         this.directConnection = directConnection;
     }
 

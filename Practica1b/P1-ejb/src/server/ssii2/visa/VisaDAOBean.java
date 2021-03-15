@@ -208,7 +208,6 @@ public class VisaDAOBean extends DBTester implements VisaDAOLocal {
 
         // TODO: Utilizar en funcion de isPrepared()
         PreparedStatement pstmt = null;
-
         // Calcular pago.
         // Comprobar id.transaccion - si no existe,
         // es que la tarjeta no fue comprobada
