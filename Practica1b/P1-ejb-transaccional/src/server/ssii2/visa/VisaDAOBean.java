@@ -235,7 +235,7 @@ public class VisaDAOBean extends DBTester implements VisaDAOLocal {
             String getSaldo = SELECT_SALDO_TARJETA_QRY;
             errorLog(getSaldo);
             pstmt = con.prepareStatement(getSaldo);
-            pstmt.setString(1, pago.getTarjeta());
+            pstmt.setString(1, pago.getTarjeta().getNumero());
             rs = pstmt.executeQuery();
 
             if (rs.next()) {
