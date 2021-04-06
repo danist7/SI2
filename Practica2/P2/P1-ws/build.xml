@@ -51,6 +51,19 @@ ant limpiar-todo
         <antcall target="cliente" />
     </target>
 
+		<target name="p2">
+				<antcall target="create-pool-local"/>
+				<antcall target="create-resource-local"/>
+				<antcall target="casitodo"/>
+			</target>
+
+		<target name="replegar">
+				<antcall target="replegar-servicio"/>
+				<antcall target="replegar-cliente"/>
+				<antcall target="delete-pool-local"/>
+				<antcall target="delete-resource-local"/>
+		</target>
+
     <target name="casitodo">
         <antcall target="servicio" />
         <antcall target="cliente" />

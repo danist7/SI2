@@ -1,0 +1,240 @@
+2021-04-05 19:53:50,215 INFO o.a.j.u.JMeterUtils: Setting Locale to es_ES
+2021-04-05 19:53:50,236 INFO o.a.j.u.JMeterUtils: Could not find resources for 'es_ES', using 'es'
+2021-04-05 19:53:50,237 INFO o.a.j.JMeter: Loading user properties from: /home/danist/apache-jmeter-5.2.1/bin/user.properties
+2021-04-05 19:53:50,237 INFO o.a.j.JMeter: Loading system properties from: /home/danist/apache-jmeter-5.2.1/bin/system.properties
+2021-04-05 19:53:50,239 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2021-04-05 19:53:50,240 INFO o.a.j.JMeter: Version 5.2.1
+2021-04-05 19:53:50,240 INFO o.a.j.JMeter: java.version=1.8.0_282
+2021-04-05 19:53:50,240 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-04-05 19:53:50,240 INFO o.a.j.JMeter: os.name=Linux
+2021-04-05 19:53:50,240 INFO o.a.j.JMeter: os.arch=amd64
+2021-04-05 19:53:50,240 INFO o.a.j.JMeter: os.version=4.15.0-20-generic
+2021-04-05 19:53:50,240 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-04-05 19:53:50,240 INFO o.a.j.JMeter: java.awt.headless=null
+2021-04-05 19:53:50,240 INFO o.a.j.JMeter: Max memory     =1827143680
+2021-04-05 19:53:50,240 INFO o.a.j.JMeter: Available Processors =4
+2021-04-05 19:53:50,247 INFO o.a.j.JMeter: Default Locale=español (España)
+2021-04-05 19:53:50,247 INFO o.a.j.JMeter: JMeter  Locale=español (España)
+2021-04-05 19:53:50,248 INFO o.a.j.JMeter: JMeterHome=/home/danist/apache-jmeter-5.2.1
+2021-04-05 19:53:50,248 INFO o.a.j.JMeter: user.dir  =/home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2
+2021-04-05 19:53:50,248 INFO o.a.j.JMeter: PWD       =/home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2
+2021-04-05 19:53:50,248 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: danist-Lenovo-E51-80 FullName: danist-Lenovo-E51-80
+2021-04-05 19:53:50,496 INFO o.a.j.g.a.LookAndFeelCommand: Installing Darcula LAF
+2021-04-05 19:53:50,577 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: com.bulenkov.darcula.DarculaLaf [Darcula]
+2021-04-05 19:53:50,577 INFO o.a.j.JMeter: Setting LAF to: com.bulenkov.darcula.DarculaLaf
+2021-04-05 19:53:50,765 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2021-04-05 19:53:53,164 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-04-05 19:53:53,165 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-04-05 19:53:53,165 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-04-05 19:53:53,165 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-04-05 19:53:53,165 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-04-05 19:53:53,166 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-04-05 19:53:53,648 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2021-04-05 19:53:53,649 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /home/danist/apache-jmeter-5.2.1/bin/proxyserver.jks
+2021-04-05 19:53:53,841 INFO o.a.j.s.FileServer: Default base='/home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2'
+2021-04-05 19:53:54,274 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-04-05 19:53:54,274 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-04-05 19:53:54,274 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-04-05 19:53:54,274 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-04-05 19:53:54,302 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-04-05 19:54:00,733 INFO o.a.j.g.a.Load: Loading file: /home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2/P2.jmx
+2021-04-05 19:54:00,733 INFO o.a.j.s.FileServer: Set new base='/home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2'
+2021-04-05 19:54:00,952 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-04-05 19:54:00,958 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-04-05 19:54:00,961 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-04-05 19:54:00,965 INFO o.a.j.s.SaveService: Loading file: /home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2/P2.jmx
+2021-04-05 19:54:01,189 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-04-05 19:54:01,230 INFO o.a.j.s.FileServer: Set new base='/home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2'
+2021-04-05 19:54:33,439 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-04-05 19:54:33,443 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-04-05 19:54:33,443 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-04-05 19:54:33,447 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-04-05 19:54:33,447 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-04-05 19:54:33,776 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2021-04-05 19:54:33,820 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : P1-base
+2021-04-05 19:54:33,820 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-base.
+2021-04-05 19:54:33,820 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 19:54:33,821 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 19:54:33,826 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-04-05 19:54:33,827 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: P1-base to finish before starting next group
+2021-04-05 19:54:33,831 INFO o.a.j.t.JMeterThread: Thread started: P1-base 1-1
+2021-04-05 19:54:33,837 INFO o.a.j.s.FileServer: Stored: datagen/listado.csv
+2021-04-05 19:54:33,847 INFO o.a.j.p.h.s.HTTPJavaImpl: Maximum connection retries = 0
+2021-04-05 19:54:47,409 INFO o.a.j.t.JMeterThread: Thread is done: P1-base 1-1
+2021-04-05 19:54:47,410 INFO o.a.j.t.JMeterThread: Thread finished: P1-base 1-1
+2021-04-05 19:54:47,411 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : P1-ws
+2021-04-05 19:54:47,412 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-ws.
+2021-04-05 19:54:47,413 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 19:54:47,413 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 19:54:47,417 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2021-04-05 19:54:47,417 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: P1-ws to finish before starting next group
+2021-04-05 19:54:47,419 INFO o.a.j.t.JMeterThread: Thread started: P1-ws 2-1
+2021-04-05 19:56:51,040 INFO o.a.j.t.JMeterThread: Thread is done: P1-ws 2-1
+2021-04-05 19:56:51,040 INFO o.a.j.t.JMeterThread: Thread finished: P1-ws 2-1
+2021-04-05 19:56:51,040 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : P1-ejb
+2021-04-05 19:56:51,040 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-ejb.
+2021-04-05 19:56:51,041 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 19:56:51,041 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 19:56:51,042 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2021-04-05 19:56:51,042 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-04-05 19:56:51,042 INFO o.a.j.t.JMeterThread: Thread started: P1-ejb 3-1
+2021-04-05 19:57:34,224 INFO o.a.j.t.JMeterThread: Thread is done: P1-ejb 3-1
+2021-04-05 19:57:34,225 INFO o.a.j.t.JMeterThread: Thread finished: P1-ejb 3-1
+2021-04-05 19:57:34,226 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-04-05 19:57:34,227 INFO o.a.j.s.FileServer: Close: datagen/listado.csv
+2021-04-05 19:57:34,229 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2021-04-05 20:00:37,953 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-04-05 20:00:37,954 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-04-05 20:00:37,964 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2021-04-05 20:00:38,006 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : P1-base
+2021-04-05 20:00:38,006 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-base.
+2021-04-05 20:00:38,006 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:00:38,007 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:00:38,011 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-04-05 20:00:38,011 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: P1-base to finish before starting next group
+2021-04-05 20:00:38,011 INFO o.a.j.t.JMeterThread: Thread started: P1-base 1-1
+2021-04-05 20:00:38,012 INFO o.a.j.s.FileServer: Stored: datagen/listado.csv
+2021-04-05 20:00:49,568 INFO o.a.j.t.JMeterThread: Thread is done: P1-base 1-1
+2021-04-05 20:00:49,569 INFO o.a.j.t.JMeterThread: Thread finished: P1-base 1-1
+2021-04-05 20:00:49,572 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : P1-ws
+2021-04-05 20:00:49,572 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-ws.
+2021-04-05 20:00:49,573 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:00:49,573 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:00:49,576 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2021-04-05 20:00:49,576 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: P1-ws to finish before starting next group
+2021-04-05 20:00:49,579 INFO o.a.j.t.JMeterThread: Thread started: P1-ws 2-1
+2021-04-05 20:01:07,814 INFO o.a.j.g.a.Start: Stopping test
+2021-04-05 20:01:07,837 INFO o.a.j.t.JMeterThread: Stopping: P1-ws 2-1
+2021-04-05 20:01:07,838 WARN o.a.j.t.JMeterThread: Interrupting: P1-ws 2-1 sampler: P1-ws
+2021-04-05 20:01:07,844 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2021-04-05 20:01:07,845 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2021-04-05 20:01:07,848 INFO o.a.j.t.JMeterThread: Thread finished: P1-ws 2-1
+2021-04-05 20:01:07,848 INFO o.a.j.e.StandardJMeterEngine: Test stopped - no more thread groups will be started
+2021-04-05 20:01:07,848 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-04-05 20:01:07,849 INFO o.a.j.s.FileServer: Close: datagen/listado.csv
+2021-04-05 20:01:07,849 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2021-04-05 20:02:25,740 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-04-05 20:02:25,741 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-04-05 20:02:25,743 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2021-04-05 20:02:25,950 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : P1-base
+2021-04-05 20:02:25,951 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-base.
+2021-04-05 20:02:25,951 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:02:25,951 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:02:25,951 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-04-05 20:02:25,951 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: P1-base to finish before starting next group
+2021-04-05 20:02:25,951 INFO o.a.j.t.JMeterThread: Thread started: P1-base 1-1
+2021-04-05 20:02:25,952 INFO o.a.j.s.FileServer: Stored: datagen/listado.csv
+2021-04-05 20:02:39,034 INFO o.a.j.t.JMeterThread: Thread is done: P1-base 1-1
+2021-04-05 20:02:39,035 INFO o.a.j.t.JMeterThread: Thread finished: P1-base 1-1
+2021-04-05 20:02:39,035 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : P1-ws
+2021-04-05 20:02:39,035 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-ws.
+2021-04-05 20:02:39,036 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:02:39,036 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:02:39,037 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2021-04-05 20:02:39,037 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: P1-ws to finish before starting next group
+2021-04-05 20:02:39,038 INFO o.a.j.t.JMeterThread: Thread started: P1-ws 2-1
+2021-04-05 20:03:26,858 INFO o.a.j.t.JMeterThread: Thread is done: P1-ws 2-1
+2021-04-05 20:03:26,859 INFO o.a.j.t.JMeterThread: Thread finished: P1-ws 2-1
+2021-04-05 20:03:26,860 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : P1-ejb
+2021-04-05 20:03:26,861 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-ejb.
+2021-04-05 20:03:26,862 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:03:26,862 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:03:26,866 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2021-04-05 20:03:26,866 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-04-05 20:03:26,868 INFO o.a.j.t.JMeterThread: Thread started: P1-ejb 3-1
+2021-04-05 20:03:45,201 INFO o.a.j.t.JMeterThread: Thread is done: P1-ejb 3-1
+2021-04-05 20:03:45,201 INFO o.a.j.t.JMeterThread: Thread finished: P1-ejb 3-1
+2021-04-05 20:03:45,202 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-04-05 20:03:45,203 INFO o.a.j.s.FileServer: Close: datagen/listado.csv
+2021-04-05 20:03:45,207 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2021-04-05 20:10:51,551 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-04-05 20:10:51,552 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-04-05 20:10:51,554 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2021-04-05 20:10:51,585 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : P1-ejb
+2021-04-05 20:10:51,585 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-ejb.
+2021-04-05 20:10:51,585 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:10:51,585 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:10:51,586 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-04-05 20:10:51,586 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-04-05 20:10:51,586 INFO o.a.j.t.JMeterThread: Thread started: P1-ejb 1-1
+2021-04-05 20:10:51,587 INFO o.a.j.s.FileServer: Stored: datagen/listado.csv
+2021-04-05 20:10:53,917 INFO o.a.j.g.a.Start: Stopping test
+2021-04-05 20:10:53,920 INFO o.a.j.t.JMeterThread: Stopping: P1-ejb 1-1
+2021-04-05 20:10:53,921 WARN o.a.j.t.JMeterThread: Interrupting: P1-ejb 1-1 sampler: P1-ejb
+2021-04-05 20:10:53,922 ERROR o.a.j.p.h.s.HTTPJavaImpl: readResponse: java.net.SocketException: Socket closed
+2021-04-05 20:10:53,922 ERROR o.a.j.p.h.s.HTTPJavaImpl: Cause: java.net.SocketException: Socket closed
+2021-04-05 20:10:53,923 INFO o.a.j.t.JMeterThread: Thread finished: P1-ejb 1-1
+2021-04-05 20:10:53,923 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-04-05 20:10:53,923 INFO o.a.j.s.FileServer: Close: datagen/listado.csv
+2021-04-05 20:10:53,924 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2021-04-05 20:12:30,396 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-04-05 20:12:30,396 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-04-05 20:12:30,397 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2021-04-05 20:12:30,604 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : P1-ejb
+2021-04-05 20:12:30,604 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-ejb.
+2021-04-05 20:12:30,604 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:12:30,604 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:12:30,605 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-04-05 20:12:30,605 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-04-05 20:12:30,605 INFO o.a.j.t.JMeterThread: Thread started: P1-ejb 1-1
+2021-04-05 20:12:30,605 INFO o.a.j.s.FileServer: Stored: datagen/listado.csv
+2021-04-05 20:12:39,874 INFO o.a.j.t.JMeterThread: Thread is done: P1-ejb 1-1
+2021-04-05 20:12:39,874 INFO o.a.j.t.JMeterThread: Thread finished: P1-ejb 1-1
+2021-04-05 20:12:39,875 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-04-05 20:12:39,876 INFO o.a.j.s.FileServer: Close: datagen/listado.csv
+2021-04-05 20:12:39,878 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2021-04-05 20:14:52,217 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-04-05 20:14:52,217 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-04-05 20:14:52,218 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2021-04-05 20:14:52,397 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : P1-ejb
+2021-04-05 20:14:52,398 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-ejb.
+2021-04-05 20:14:52,398 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:14:52,398 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:14:52,398 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-04-05 20:14:52,398 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-04-05 20:14:52,399 INFO o.a.j.t.JMeterThread: Thread started: P1-ejb 1-1
+2021-04-05 20:14:52,400 INFO o.a.j.s.FileServer: Stored: datagen/listado.csv
+2021-04-05 20:15:03,091 INFO o.a.j.t.JMeterThread: Thread is done: P1-ejb 1-1
+2021-04-05 20:15:03,092 INFO o.a.j.t.JMeterThread: Thread finished: P1-ejb 1-1
+2021-04-05 20:15:03,093 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-04-05 20:15:03,093 INFO o.a.j.s.FileServer: Close: datagen/listado.csv
+2021-04-05 20:15:03,095 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2021-04-05 20:15:29,935 INFO o.a.j.g.a.Load: Loading file: /home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2/P2.jmx
+2021-04-05 20:15:29,935 INFO o.a.j.s.FileServer: Set new base='/home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2'
+2021-04-05 20:15:29,936 INFO o.a.j.s.SaveService: Loading file: /home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2/P2.jmx
+2021-04-05 20:15:30,132 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-04-05 20:15:30,177 INFO o.a.j.s.FileServer: Set new base='/home/danist/Documentos/UAM/SEGUNDOCUATRI/SI2/Practica2/P2'
+2021-04-05 20:16:44,319 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-04-05 20:16:44,332 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-04-05 20:16:44,333 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2021-04-05 20:16:44,334 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : P1-base
+2021-04-05 20:16:44,335 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-base.
+2021-04-05 20:16:44,335 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:16:44,335 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:16:44,338 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-04-05 20:16:44,338 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: P1-base to finish before starting next group
+2021-04-05 20:16:44,352 INFO o.a.j.t.JMeterThread: Thread started: P1-base 1-1
+2021-04-05 20:16:44,352 INFO o.a.j.s.FileServer: Stored: datagen/listado.csv
+2021-04-05 20:16:55,189 INFO o.a.j.t.JMeterThread: Thread is done: P1-base 1-1
+2021-04-05 20:16:55,190 INFO o.a.j.t.JMeterThread: Thread finished: P1-base 1-1
+2021-04-05 20:16:55,191 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : P1-ws
+2021-04-05 20:16:55,191 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-ws.
+2021-04-05 20:16:55,192 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:16:55,192 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:16:55,194 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2021-04-05 20:16:55,195 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: P1-ws to finish before starting next group
+2021-04-05 20:16:55,196 INFO o.a.j.t.JMeterThread: Thread started: P1-ws 2-1
+2021-04-05 20:17:43,234 INFO o.a.j.t.JMeterThread: Thread is done: P1-ws 2-1
+2021-04-05 20:17:43,234 INFO o.a.j.t.JMeterThread: Thread finished: P1-ws 2-1
+2021-04-05 20:17:43,235 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : P1-ejb
+2021-04-05 20:17:43,235 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P1-ejb.
+2021-04-05 20:17:43,235 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-04-05 20:17:43,235 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=1 ramp-up=5 delayedStart=false
+2021-04-05 20:17:43,236 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2021-04-05 20:17:43,236 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-04-05 20:17:43,237 INFO o.a.j.t.JMeterThread: Thread started: P1-ejb 3-1
+2021-04-05 20:17:58,797 INFO o.a.j.t.JMeterThread: Thread is done: P1-ejb 3-1
+2021-04-05 20:17:58,797 INFO o.a.j.t.JMeterThread: Thread finished: P1-ejb 3-1
+2021-04-05 20:17:58,798 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-04-05 20:17:58,799 INFO o.a.j.s.FileServer: Close: datagen/listado.csv
+2021-04-05 20:17:58,804 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
